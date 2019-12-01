@@ -65,7 +65,8 @@ namespace Weather
             {
                 City = "Omsk";
             }
-            WebRequest request = WebRequest.Create("https://api.openweathermap.org/data/2.5/weather?q=" + City + "&units=metric&appid=1fb63a10a9c1ba5eee8d4615108eda44");
+            WebRequest request = WebRequest.Create("https://api.openweathermap.org/data/2.5/weather?q=" 
+                + City + "&units=metric&appid=1fb63a10a9c1ba5eee8d4615108eda44");
             request.Method = "POST";
             request.ContentType = "application/x-www-urlencoded";
 
